@@ -18,17 +18,20 @@ To build the box file you will need the following installed:
 
 
 ### ISO 
-It is assumed that you have downloaded the CentOS-7-x86_64-Minimal-2003.iso and placed it in the **packer-centos** directory as **CentOS-7-x64-Minimal.iso**.
+It is assumed that you have downloaded the CentOS-7-x86_64-Minimal-2003.iso and placed it in the **packer-centos/iso**.
 
 Alternatively, you may edit the iso_url in the **CentOS-7-x64.json** which is the packer template file: 
 
 For instance; "iso_url": "http://mirror.ucu.ac.ug/centos/7.8.2003/isos/x86_64/CentOS-7-x86_64-Minimal-2003.iso"
 
+### Virtualbox Guest Additions
+You need to replace the `guest_additions_url` value with the correct value to reflect the location of the virtual box guest additions in your system.
+
 ### Build and Run 
 
 1. Clone this repository: 
 ```
-$ git clone https://github.com/miirochristopher/packer-centos.git 
+$ git clone https://github.com/mhawila/packer-centos.git 
 ```
 
 2. Go to the root directory. 
